@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, "微软雅黑", Helvetica, sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 20px;
+    background: linear-gradient(to top, #efefef, #f8f8f8);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/*************************content****************************/
+#container {
+    position: relative;
+    margin: 0 auto;
+}
+
+#container::after {
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.box {
+    float: left;
+    padding: 5px;
+    transition: all .5s linear;
+}
+
+.content {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.content img {
+    width: 160px;
+    height: auto;
+}
